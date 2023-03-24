@@ -1,0 +1,86 @@
+body{
+  background-color: #FCF9E0;
+}
+.block-1{
+  background-color: #50B5D1;
+  width: 100%;
+  height: 30%;
+}
+
+.wrapper{
+  padding: 5%;
+  height: 40%;
+}
+.container{
+  position:relative;
+  width: 100%;
+  height: 10rem;
+  background-color: #A8D9E3;
+}
+.block{
+  width: 160px;
+  height: 160px;
+  background-color: #FBE3AF;
+  position: absolute;
+}
+.text{
+  padding:5%;
+  position:relative;
+  top:40%;
+  text-align: center;
+  color:#FBE3AF;
+}
+/*------------------------------------------------------------------------------*/
+@keyframes move-block {
+  0%{
+    left:0;
+    rotate: 0deg;
+    box-shadow: 5px -5px 20px rgba(214, 73, 51), -5px 5px 20px rgba(214, 73, 51);
+    border-radius: 5px;
+  }
+  50%{
+    border-radius: 50%;
+  }
+  100%{
+    left: calc(100% - 160px);
+    background-color: #AB3428;
+    rotate:180deg;
+    box-shadow: 5px -5px 20px rgba(241, 232, 222, 0.868), -5px 5px 20px rgba(255, 248, 241, 0.863);
+    border-radius: 5px;
+}
+}
+.block:hover{
+  animation-play-state: paused;
+}
+.block{
+  animation: move-block 5s linear infinite alternate;
+}
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "RampartOne";
+  font-weight: 400;
+  font-style: normal;
+  src:local("RampartOne Regular"),
+      local("RampartOne-Regular"),
+      url("../Fonts/RampartOne-Regular.woff2") format("woff2"),
+      url("../Fonts/RampartOne-Regular.woff") format("woff"),
+      url("../Fonts/RampartOne-Regular.eot") format("eot");
+  font-display: swap;
+}
+.block1__wrapper{
+  width: 70%;
+  height: 100%;
+  background-color: #D0693A;
+}
+.block1__title{
+  font-size: 3rem;
+  font-family: "RampartOne";
+  color: #FFFCF4;
+  padding: 2rem;
+  text-align: center;
+}
+.wrapper2{
+  margin-left: 20%;
+}
+
+
